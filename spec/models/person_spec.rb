@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Person, :type => :model do
   let(:person) do
-  Person.new(first_name: 'Alice', last_name: 'Smith')
+    Person.new(first_name: 'Alice', last_name: 'Smith')
 end
 
   it 'is valid' do
@@ -22,5 +22,5 @@ end
   it 'has an array of phone numbers' do
     expect(person.phone_numbers).to eq([])
   end
-  
+
 end

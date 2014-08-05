@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe "PhoneNUmbers", :type => :request do
-  describe "GET /phone_n_umbers" do
+RSpec.describe "PhoneNumbers", :type => :request do
+  describe "GET /phone_numbers" do
     it "works! (now write some real specs)" do
-      get phone_n_umbers_path
+      get phone_numbers_path
       expect(response.status).to be(200)
     end
   end

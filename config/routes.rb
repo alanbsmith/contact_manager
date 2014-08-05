@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :phone_n_umbers
+  resources :phone_numbers
 
   resources :people
 

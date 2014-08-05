@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe "phone_n_umbers/show", :type => :view do
+RSpec.describe "phone_numbers/show", :type => :view do
   before(:each) do
-    @phone_n_umber = assign(:phone_n_umber, PhoneNUmber.create!(
+    @phone_number = assign(:phone_number, PhoneNumber.create!(
       :number => "Number",
       :person_id => 1
     ))
