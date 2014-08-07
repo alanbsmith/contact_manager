@@ -1,4 +1,4 @@
-<h1>Listing people</h1>
+<h1>Contacts</h1>
 
 <table>
   <thead>
@@ -14,9 +14,9 @@
       <tr>
         <td><%= person.first_name %></td>
         <td><%= person.last_name %></td>
-        <td><%= link_to 'Show', person %></td>
-        <td><%= link_to 'Edit', edit_person_path(person) %></td>
-        <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'show', person %></td>
+        <td><%= link_to 'edit', edit_person_path(person) %></td>
+        <td><%= link_to 'delete', person, method: :delete %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Person', new_person_path %>
+<%= link_to 'Add a new contact', new_person_path %>

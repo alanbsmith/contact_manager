@@ -54,10 +54,10 @@ class PhoneNumbersController < ApplicationController
   # DELETE /phone_numbers/1
   # DELETE /phone_numbers/1.json
   def destroy
-    @phone_number.destroy
     respond_to do |format|
-      format.html { redirect_to phone_numbers_url, notice: 'Phone number was successfully destroyed.' }
-      format.json { head :no_content }
+    @phone_number.destroy
+      format.html { redirect_to @phone_number.person, notice: 'Phone number was successfully deleted.' }
+      format.json { render :destroy, status: :ok, location: @phone_number }
     end
   end
 
